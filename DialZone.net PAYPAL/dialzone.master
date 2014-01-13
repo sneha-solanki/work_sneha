@@ -1,0 +1,239 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="dialzone.master.cs" Inherits="dialzone" %>
+<%@ Register Assembly="System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+    Namespace="System.Web.UI" TagPrefix="asp" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Dial Zone </title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script language="javascript" type="text/javascript">
+    var message="Function Disabled!";
+
+    function showSearchdiv(controlName){
+
+	    if(document.getElementById(controlName).style.display == 'inline'){
+		    document.getElementById(controlName).style.display = 'none';
+    	}else{
+	    document.getElementById(controlName).style.display = 'inline';
+	    }
+    }
+
+    function clickIE4(){
+        if (event.button==2){
+            alert(message);
+        return false;
+        }
+    }
+
+    function clickNS4(e){
+        if (document.layers||document.getElementById&&!document.all){
+            if (e.which==2||e.which==3){
+                alert(message);
+                return false;
+            }
+        }
+    }
+
+    if (document.layers){
+        document.captureEvents(Event.MOUSEDOWN);
+        document.onmousedown=clickNS4;
+        }
+    else if (document.all&&!document.getElementById){
+        document.onmousedown=clickIE4;
+    }
+
+    document.oncontextmenu=new Function("return false")
+    </script>
+</head>
+<body  style="margin: 0 0 0 0; text-align: center;">
+    <form id="form1" runat="server">
+    <div align="center" style="text-align: center" >
+        <table border="0" cellpadding="0" cellspacing="0" style="width: 856px">
+            <tr>
+                <td style="background-position:top; background-image: url(images/callcenter1_01.jpg);
+                                width: 940px; background-repeat: no-repeat; height: 10px;">
+                    <asp:ScriptManager ID="ScriptManager1" runat="server">
+                    </asp:ScriptManager>
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td align="left" style="height: 312px;">
+                    <table border="0" cellpadding="0" cellspacing="0" style="width: 100%" align="center">
+                        <tr>
+                            <td rowspan="2" align="left" >
+                                <table border="0" cellpadding="0" cellspacing="0" style="width: 100%">
+                                    <tr>
+                                        <td style="width: 313px; height: 250px" valign="top">
+                                            <table border="0" cellpadding="0" cellspacing="0" style="width: 97%">
+                                                <tr>
+                                                    <td style="background-position:bottom; background-image: url(images/callcenter1_03.jpg);
+                                width: 288px; background-repeat: no-repeat; height: 111px">
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="background-position:top; background-image: url(images/callcenter1_08.jpg);
+                                width: 288px; background-repeat:repeat-y; height: 105px" valign="top">
+                                                        <table border="0" cellpadding="0" cellspacing="0" style="width: 100%; height: 95px;">
+                                                            <tr>
+                                                                <td style="width: 53px;" rowspan="3">
+                                                                </td>
+                                                                <td class="MENU" valign="bottom">
+                                                               <a href="default.aspx" class="MENU">     Home</a></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td  class="MENU" valign="bottom">
+                                                              <a href="about us.aspx" class="MENU">    About us</a>  </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td  class="MENU" valign="bottom">
+                                                                <a href="contact.aspx" class="MENU">   Contact us</a></td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td align="center" >
+                                        <asp:Image ID="Image2" runat="server" ImageUrl="~/images/callcenter1_06.jpg" /></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                    <table border="0" cellpadding="0" cellspacing="0" style="width: 100%">
+                        <tr>
+                            <td style="background-image: url(image/bgline.jpg); background-repeat:repeat-x;" align="right">
+                    <table border="0" cellpadding="0" cellspacing="0" style="width: 659px">
+                        <tr>
+                            <td valign="top">
+                    <asp:Label ID="lbl_welcome" runat="server" CssClass="title" Visible="False" BackColor="White"></asp:Label></td>
+                            <td valign="top">
+                                &nbsp; &nbsp;&nbsp;
+                            </td>
+                            <td>
+                            </td>
+                            <td valign="top" style="width: 111px" align="right">
+                                <table border="0" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td>
+                                            <asp:ImageButton ID="img_logout" runat="server" ImageUrl="~/image/logout1.jpg" OnClick="img_logout_Click" Visible="False" /></td>
+                                        <td>
+                    </td>
+                                    </tr>
+                                </table>
+                                &nbsp;</td>
+                        </tr>
+                    </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: right; width: 940px;">
+                    </td>
+            </tr>
+        </table>
+        <table border="0" cellpadding="0" cellspacing="0" style="width: 100%; text-align: center;">
+            <tr>
+                <td style="width: 100px">
+                </td>
+                <td style="width: 100px">
+                </td>
+                <td style="width: 7px">
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 100px; height: 19px" valign="top">
+                    <table border="0" cellpadding="0" cellspacing="0" style="width: 100%">
+                        <tr>
+                            <td rowspan="7" style="width: 100px">
+                                &nbsp; &nbsp; &nbsp;&nbsp;
+                            </td>
+                            <td style="width: 100px; text-align: left">
+                                <asp:Image ID="img_user" runat="server" ImageUrl="~/image/user2.gif" Visible="False" /></td>
+                            <td style="width: 100px; text-align: left;">
+                                <asp:LinkButton ID="lnk_user" runat="server" CssClass="gridmenu" OnClick="lnk_user_Click"
+                                    Visible="False">User</asp:LinkButton></td>
+                        </tr>
+                        <tr>
+                            <td style="width: 100px; height: 19px; text-align: left">
+                                <asp:ImageButton ID="img_rpt" runat="server" ImageUrl="~/image/report1.gif"
+                                    Visible="False" /></td>
+                            <td style="width: 100px; height: 19px; text-align: left;">
+                                <asp:LinkButton ID="lnk_report" runat="server" CssClass="gridmenu" Visible="False">Report</asp:LinkButton></td>
+                        </tr>
+                        <tr>
+                            <td style="width: 100px; text-align: left;">
+                                <asp:Image ID="img_trans" runat="server" ImageUrl="~/image/trans.gif" Visible="False" /></td>
+                            <td style="width: 100px">
+                                <asp:LinkButton ID="lnk_dataEnt" runat="server" CssClass="gridmenu" OnClick="lnk_dataEnt_Click"
+                                    Visible="False">TransactionEntry</asp:LinkButton></td>
+                        </tr>
+                        <tr>
+                            <td style="width: 100px">
+                                <asp:Image ID="img_pass" runat="server" ImageUrl="~/image/password.gif" Visible="False" /></td>
+                            <td style="width: 100px">
+                                <asp:LinkButton ID="lnk_changepass" runat="server" CssClass="gridmenu"
+                                    Visible="False" OnClick="lnk_changepass_Click">ChangePassword</asp:LinkButton></td>
+                        </tr>
+                        <tr>
+                            <td style="width: 100px; height: 19px; text-align: left;">
+                                <asp:Image ID="img_profile" runat="server" ImageUrl="~/image/myprofile.jpg" Visible="False" /></td>
+                            <td style="width: 100px; height: 19px; text-align: left;">
+                                <asp:LinkButton ID="lnk_myprofile" runat="server" CssClass="gridmenu" OnClick="lnk_myprofile_Click" Visible="False">MyProfile</asp:LinkButton></td>
+                        </tr>
+                        <tr>
+                            <td style="width: 100px">
+                            </td>
+                            <td style="width: 100px">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 100px">
+                                &nbsp; &nbsp;
+                            </td>
+                            <td style="width: 100px">
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td style="width: 800px">
+                    <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+        </asp:contentplaceholder>
+                </td>
+                <td style="width: 7px; height: 19px">
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 100px">
+                </td>
+                <td style="width: 100px">
+                </td>
+                <td style="width: 7px">
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 100px">
+                </td>
+                <td style="width: 100px">
+                </td>
+                <td style="width: 7px">
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 100px">
+                </td>
+                <td style="width: 100px">
+                </td>
+                <td style="width: 7px">
+                </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>

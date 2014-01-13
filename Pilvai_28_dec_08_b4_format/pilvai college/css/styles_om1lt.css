@@ -1,0 +1,67 @@
+ul.vbULom1lt {
+  position: absolute;
+  visibility: hidden;
+}
+.vbULom1lt {
+  position: absolute;
+  visibility: hidden;
+  display: block;
+  overflow: auto;
+  font-size: 1px;
+  padding: 2px;
+  margin: 0px;
+  border: 1px solid #646464;
+  background-color: #FFFFFF;
+}
+.vbULom1lt table {
+  border-collapse: separate;
+  border-spacing: 0px;
+}
+.vbULom1lt tr {
+  font-size: 1px;
+  cursor: pointer;
+  background-color: #FFFFFF;  
+}
+.vbULom1lt tr.over {
+  background-color: #0292B5;/**/
+  
+}
+.vbULom1lt td {
+  border: 1px solid #FFFFFF;
+  padding: 3px;
+  text-align: left;
+}
+.vbULom1lt tr.over td {
+  border-color: #0292B5;/**/
+  
+}
+.vbULom1lt td a {
+  font-family: Tahoma;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: normal;
+  color: #000000;
+  text-decoration: none;
+}
+.vbULom1lt tr.over a {
+  font-family: Tahoma;
+  font-size: 11px;
+  font-style:normal;
+  font-weight:bold; /**/
+  color: #FFFFFF; /**/
+  text-decoration: none;
+}
+.vbULom1lt tr.popup {
+  background-color: #FFC488;
+}
+.vbULom1lt tr.popup td {
+  border-color: #FFC488;
+}
+.vbULom1lt tr.popup a {
+  font-family: Tahoma;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: normal;
+  color: #000000;
+  text-decoration: none;
+}

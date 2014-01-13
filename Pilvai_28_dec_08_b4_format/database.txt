@@ -1,0 +1,135 @@
+-- phpMyAdmin SQL Dump
+-- version 2.11.6
+-- http://www.phpmyadmin.net
+--
+-- Host: localhost
+-- Generation Time: Dec 27, 2008 at 08:12 AM
+-- Server version: 5.0.51
+-- PHP Version: 5.2.6
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+--
+-- Database: `pcollage`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `module_master`
+--
+
+CREATE TABLE `module_master` (
+  `Module_Id` int(11) NOT NULL,
+  `Module_Name` varchar(30) NOT NULL,
+  `Module_Group` varchar(20) NOT NULL,
+  `File_Name` varchar(30) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `module_master`
+--
+
+INSERT INTO `module_master` (`Module_Id`, `Module_Name`, `Module_Group`, `File_Name`) VALUES
+(1, 'Home', 'home', 'home.php'),
+(2, 'Message From Principal', 'about_us', 'message_principal.php'),
+(3, 'Environment', 'about_us', 'environment.php'),
+(4, 'Permanent Faculty', 'faculty', 'per_faculty.php'),
+(5, 'Administrative Staff', 'faculty', 'administrative_staff.php'),
+(6, 'Arts', 'programme', 'arts.php'),
+(7, 'Commerce', 'programme', 'commerce.php'),
+(8, 'Campus', 'facility', 'campus.php'),
+(9, 'Library', 'facility', 'library.php'),
+(10, 'NCC', 'activities', 'ncc.php'),
+(11, 'NSS', 'activities', 'nss.php'),
+(12, 'Academics', 'achivement', 'academics.php'),
+(13, 'Sports', 'achivement', 'sports.php'),
+(14, 'Contact US', 'contact_us', 'contact_us.php'),
+(15, 'Vision and Mission', 'about_us', 'vision_mission.php'),
+(16, 'science', 'programme', 'science.php'),
+(18, 'About Management', 'about_us', 'about_management.php'),
+(19, 'Honorable Principals', 'about_us', 'honorable_principals.php'),
+(20, 'Admission Procedure', 'programme', 'admission_procedure.php'),
+(21, 'Pilvai Vartul', 'activities', 'pilvai_vartul.php'),
+(22, 'Sport', 'activities', 'sport.php'),
+(23, 'Culture', 'activities', 'culture.php'),
+(24, 'Community Science ', 'activities', 'community_science.php'),
+(25, 'Career Guidance ', 'activities', 'career_guidance_center.php'),
+(26, 'Culture Achivement', 'achivement', 'culture_achivement.php'),
+(27, 'NSS/NCC', 'achivement', 'nss_ncc_achiv.php'),
+(28, 'COP', 'programme', 'cop.php'),
+(29, 'Staff Details', 'faculty', 'staff_details.php');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `staff_details`
+--
+
+CREATE TABLE `staff_details` (
+  `staff_id` int(5) NOT NULL,
+  `name` varchar(50) NOT NULL,
+  `designation` varchar(20) NOT NULL,
+  `department` varchar(20) NOT NULL,
+  `birth_date` date NOT NULL,
+  `join_date` date NOT NULL,
+  `qulification` varchar(30) NOT NULL,
+  `tech_exp_au` varchar(10) NOT NULL,
+  `tech_exp_pg` varchar(10) NOT NULL,
+  `tech_exp_research` varchar(10) NOT NULL,
+  `res_pub_published` varchar(10) NOT NULL,
+  `res_pub_present` varchar(10) NOT NULL,
+  `res_pub_articales` varchar(10) NOT NULL,
+  `res_pub_books` varchar(10) NOT NULL,
+  `res_pub_working` varchar(10) NOT NULL,
+  `res_pub_completed` varchar(10) NOT NULL,
+  `partic_orientation` varchar(10) NOT NULL,
+  `partic_refresher` varchar(10) NOT NULL,
+  `partic_state` varchar(10) NOT NULL,
+  `partic_national` varchar(10) NOT NULL,
+  `partic_international` varchar(10) NOT NULL,
+  `assos_univ_name_1` varchar(50) NOT NULL,
+  `assos_univ_name_2` varchar(50) NOT NULL,
+  `assos_univ_name_3` varchar(50) NOT NULL,
+  `assos_body_1` varchar(50) NOT NULL,
+  `assos_body_2` varchar(50) NOT NULL,
+  `assos_body_3` varchar(50) NOT NULL,
+  `assos_working_as_1` varchar(50) NOT NULL,
+  `assos_working_as_2` varchar(50) NOT NULL,
+  `assos_working_as_3` varchar(50) NOT NULL,
+  `achievement` varchar(50) NOT NULL,
+  `hobbies` varchar(50) NOT NULL,
+  `image` varchar(200) NOT NULL,
+  PRIMARY KEY  (`staff_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `staff_details`
+--
+
+INSERT INTO `staff_details` (`staff_id`, `name`, `designation`, `department`, `birth_date`, `join_date`, `qulification`, `tech_exp_au`, `tech_exp_pg`, `tech_exp_research`, `res_pub_published`, `res_pub_present`, `res_pub_articales`, `res_pub_books`, `res_pub_working`, `res_pub_completed`, `partic_orientation`, `partic_refresher`, `partic_state`, `partic_national`, `partic_international`, `assos_univ_name_1`, `assos_univ_name_2`, `assos_univ_name_3`, `assos_body_1`, `assos_body_2`, `assos_body_3`, `assos_working_as_1`, `assos_working_as_2`, `assos_working_as_3`, `achievement`, `hobbies`, `image`) VALUES
+(2, 'Barat Gamanbhai Gajubhai', 'Lecturer', 'chemistry', '0000-00-00', '0000-00-00', 'M. sc coranic chemistry', '12v year', '6 year', '-', '-', '1', '-', '-', '-', '-', '1', '3', '2', '2', '-', '', '', '', '', '', '', '', '', '', '', 'play, social activity', 'UploadImages//barat gamanbhai.jpg'),
+(3, 'Dr. Kanaiyalal N. Patel', 'Lecturer', 'Chemistry', '0000-00-00', '0000-00-00', 'M.sc ph.D.', '16 year', '10 year', '', '1', '4', '', '5', '', '', '1', '3', '3', '2', '1', 'Hem. North Guj. University', 'Kelvani Uttejak Mandal Kherva', 'S. K. Patel Pharmcy College Ganpan University', 'Senate Member', 'Secratiry', 'Advise commite Member', '2005 to 2008', '2003 to Cont.', '2004 to Cont.', '', 'Play, Jorney', 'UploadImages//dr. kanaiylal.jpg'),
+(4, 'Parmar Rakekumar Ganpatlal', 'Lecturer', 'Chemistry', '0000-00-00', '0000-00-00', 'M.sc', '10 year', '5 year', '-', '-', '-', '-', '-', '-', '-', '01', '03', '02', '-', '-', '', '', '', '', '', '', '', '', '', '', 'Play Cricket, Reading', 'UploadImages//paramar rakeshhumar.jpg'),
+(5, 'Patel Nilla Vitthalbhai', 'Lecturer', 'Mathematics', '0000-00-00', '0000-00-00', 'M.sc, B.ed.', '13 year', '3 year', '-', '', '', '', '1', '', '', '01', '03', '05', '', '', 'H.N.G University, Patan', '', '', 'Board of Studies', '', '', 'Member', '', '', '', 'Reading, Painting', 'UploadImages//patel nila.jpg'),
+(7, 'Hinsu Hemntkumar M.', 'Lecturer and Head', 'Physcs', '0000-00-00', '0000-00-00', 'M.sc, ', '20 Year', '12 Year', '', '', '', '', '', '', '', '1', '3', '4', '', '', 'H. N. Guj. University', 'H. N. Guj. University', 'H. N. Guj. University. Physics Teacher Association', 'Board of studies', 'Boadr of Hostel management', 'Executive', 'Member', 'Ex. Member', 'Member', '', 'Reading', 'UploadImages//hinsu hemntkumar.jpg'),
+(9, 'Nayee Sureshchandra Bhikhalal', 'Lecturer in Physsics', 'Physsics', '0000-00-00', '0000-00-00', 'M.sc, B.ed.', '20 year', '5 year', '', '', '', '', '', '', '', '1', '3', '2', '1', '', 'North Guj. Area Teacher Association', 'H.N. Guj. Uni. Physics Teacher Association', '', 'Execative Cammitee', '', '', 'Member', 'Member', '', '', 'Reading', 'UploadImages//nayee sureshchandra.jpg'),
+(10, 'Dr. R. S. Dave', 'Lecturer in Chemistr', 'Chemistry', '0000-00-00', '0000-00-00', 'M.sc, B.ed, Ph. D.', '15 year', '8 year', '5 year', '82', '', '4', '7', '2', '2', '1', '3', '5', '3', '', 'Arts, Commerce & Scince College , Plivai', 'Hem. North Guj. Uni. ', '', 'Ex_Member', 'Board of Studies', '', '2004', '', '', '', 'Singing', 'UploadImages//dr. r. s. dave.jpg'),
+(11, 'Patel Chandrakant Ambalal', 'Lecturer in Physics', 'Physics', '0000-00-00', '0000-00-00', 'M.sc, B.ed.', '16 year', '4 year', '', '', '', '', '', '', '', '1', '2', '3', '', '', 'Shri Uttar Guj. Kanya Kelvani Mandal, Visnagar', 'Bavisi Kadva Patidar Pragati Mandal', '', 'Executive Body', 'Executive Body', '', 'Member', 'joint secretary', '', 'M.sc Physics Uin. First, Neharu Yuva Kendra- Volun', 'N.S.S., N.C.C, Social Activity', 'UploadImages//patel chandrakant.jpg'),
+(12, 'Dr. Hamirbhai Mafatji Ant', 'Lecturer', 'Biology', '0000-00-00', '0000-00-00', 'M.sc, Ph. D.', '12 year', '7 year', '1 year', '9', '4', '', '', '2', '', '1', '2', '8', '4', '', 'Govt. M.N. college, Visanagar', 'Scince College - Talod', '', 'Visiting Faculty Member', 'Visiting Faculty Membe', '', 'Lecturer', 'Lecturer', '', '02 minor Reserch Award Awarded by UGC', 'Reading', 'UploadImages//dr. hanirbhai.jpg'),
+(13, 'Modhvadia Avdabhai Rambhai', 'Lecturer', 'BioLogy', '0000-00-00', '0000-00-00', 'M.sc (Botany)', '15 year', '', '', '', '2', '', '', '', '', '1', '3', '10', '3', '', 'H.N.G. University Patan', '', '', 'Bioscince society', '', '', 'life Member', '', '', '', 'Reading', 'UploadImages//modhvadia.jpg'),
+(14, 'Dr. Nilesh R. Pandya', 'Lecturer', 'Sanskrit', '0000-00-00', '0000-00-00', 'M.A. M.ed. Ph.D.', '21 year', '15 year', '', '3', '17', '', '5', '', '', '2', '3', '37', '5', '', 'H. North Gujarat ', 'Guj. Uinversity', 'Sauratra University', 'Member', 'of the board studies', 'Member', '23/12/05', 'to', '23/12/08', '', 'Reading & Writing', 'UploadImages//dr. nileah.jpg'),
+(15, 'Pro. Dr. Ishwar Savajibhai', 'Lecturer', 'Sasnkrit', '0000-00-00', '0000-00-00', 'M.A., B.ed.,Ph.D.', '18 year', '11 year', '', '2', '2', '', '2', '', '', '1', '3', '15', '3', '', 'Gujarat University', 'Saurastra Uinversity', 'Sasnkrit & Sanskrit Swadhyay Sansathan', 'Member', 'Member', 'Excutive Member', '', '', '', 'Gold medal in Ph.D., National Scolarship in B.A.', 'Reading', 'UploadImages//pro.dr. ishvar.jpg'),
+(16, 'Dr. ManubhaI Sendhabhai Prajapati', 'Lecturer', 'Sanskrit', '0000-00-00', '0000-00-00', 'M.A., Ph.D.', '16 year', '07 year', '', '17', '15', '', '07', '', '', '01', '03', '25', '03', '', '', '', '', '', '', '', '', '', '', '', 'Reading', 'UploadImages//dr. manubhai.jpg'),
+(17, 'Dr. Yashodhar Hariprasad Raval', 'Lecturer', 'Gujarati', '0000-00-00', '0000-00-00', 'M.A., Ph.D., B.ed.', '18 year', '10 year', '', '3', '4', '', '1', '', '', '1', '3', '2', '1', '', 'Directorte of laguages', 'Guj. state school text Book organization', '', 'Directorte of laguages', 'Guj. state school text Book organization', '', 'as a Lecturer - visiter', 'as a Editer & Auther  crite', '', 'First prize in Awarded for Best Reserch Book (2005', 'Reading - Writing - to Arrenge liIbrey Programmer ', 'UploadImages//dr.yashodar.jpg'),
+(18, 'Patel Dhirubhai B.', 'Lecturer', 'Gujarati', '0000-00-00', '0000-00-00', 'M.A.', '16 year', '8 year', '', '', '', '', '', '', '', '1', '2', '', '3', '', '', '', '', '', '', '', '', '', '', '', 'reading', 'UploadImages//patel dhirubhai.jpg'),
+(19, 'Pandey Rajpati R.', 'Lecturer', 'Hindi', '0000-00-00', '0000-00-00', 'M.A., B.ed, Ph.D.', '20 year', '17 year', 'M.Phil -Gu', '', '', '7', '1', '', '6 as aM.Ph', '2', '2', '18', '3', '', 'Hem. N.G. University', '', '', 'Uinversity', '', '', 'Lecturer', '', '', 'co-ordinator por. M.Phil- Hindi Hem N.G. uni.', 'Study', 'UploadImages//pandey rajpati.jpg'),
+(20, 'Vaghera Sonyabhai M.', 'Lecutrer in Hindi', 'Hindi', '0000-00-00', '0000-00-00', 'B.A., M.A.', '16 year', '8 year', '', '', '', '', '', '', '', '1', '3', '', '4', '', '', '', '', '', '', '', '', '', '', '', '', 'UploadImages//vaghera.jpg'),
+(21, 'Prof. Samirkumar Prajapati', 'Lecturer', 'Hindi', '0000-00-00', '0000-00-00', 'M.A., M. Phil', '12 year', '7 year', '', '', '', '', '', '', '', '1', '3', '5', '1', '', '', '', '', '', '', '', '', '', '', '', '', 'UploadImages//prof. samir.jpg'),
+(22, 'Kumari Datir Mangla B.', 'Lecturer', 'History', '0000-00-00', '0000-00-00', 'M.A.', '28 year', '5 year', '', '', '', '', '', '', '', '1', '3', '', '', '', 'Hem. North Guj. Uinversity', '', '', 'Board of Studies, Historty', '', '', 'Member', '', '', '', '', 'UploadImages//ku. datir.jpg'),
+(23, 'Chaudhari Kalpeshkumar P.', 'Lecturer', 'History', '0000-00-00', '0000-00-00', 'B.A,M.A.', '7 year', '', '', '', '', '', '', '', '', '1', '1', '', '', '', 'Hem. North Guj. Uni. Patan', '', '', '', '', '', '', '', '', '', 'Sport, Writing', 'UploadImages//chaudhari kalpesh.jpg'),
+(24, 'Chauhan BipinkumarJivabhai', 'Sr. Clerk', 'Office', '0000-00-00', '0000-00-00', 'B.Com', '19 year', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'UploadImages//chauhan bipin.jpg'),
+(25, 'Patel Kantibhai Mayachandadas', 'Sr. Clerk', 'Office', '0000-00-00', '0000-00-00', 'M.A.', '19 year', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'Hostel Work', 'Cricket', 'UploadImages//patel kantibhai.jpg'),
+(26, 'Sajat Kaljibhai Khatrabhai', 'Office', 'Adminitrative Office', '0000-00-00', '0000-00-00', 'TYBA Fail', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'UploadImages//sajat kaljibhai.jpg'),
+(27, 'Chauhan Hasmukhbhai Somabhai', 'Head Clerk', 'Office', '0000-00-00', '0000-00-00', 'H.S.C.', '22 year', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'UploadImages//chauhan hasmukh.jpg'),
+(28, 'Patel Jayantibhai Manilal', 'Head Clerk', 'Office', '0000-00-00', '0000-00-00', 'B.Com.', '19 year', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'UploadImages//patel jayntibhai.jpg');

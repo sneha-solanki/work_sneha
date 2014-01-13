@@ -1,0 +1,139 @@
+.MENU {
+	font-family:Verdana;
+	font-size: 12px;
+	line-height: 10px;
+	font-weight:bold;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.MENU:hover{
+	font-family:Verdana;
+	font-size: 12px;
+	line-height: 10px;
+	font-weight:bold;
+	color: #cccccc;
+	text-decoration:underline;
+}
+.title {
+	font-family: Verdana, Arial;
+	font-size: 13px;
+	color:#333366;
+	text-decoration: none; line-height:1.5;
+	font-weight: bold;
+}
+.text {
+	font-family: Verdana, Arial;
+	font-size: 12px;
+	color:#000000;
+	text-decoration: none; 
+	text-align:justify;
+	line-height:1.5;
+	font-weight: lighter;
+}
+.link {
+	font-family:Arial;
+	font-size: 13px;
+	line-height: 18px;
+	font-weight:bold;
+	
+     color:Black;
+	
+	text-decoration: none;
+}
+.link:hover {
+	font-family:Arial;
+	font-size: 13px;
+	line-height: 18px;
+	font-weight:bold;
+   color:#333333;
+	text-decoration: none;
+}
+.login {
+	font-family:Arial;
+	font-size: 13px;
+	line-height: 18px;
+	font-weight:bold;
+	
+     color:White;
+	
+	text-decoration: none;
+}
+.more {
+	font-family: tahoma;
+	font-size: 11px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	color:#333333;
+	text-decoration: none;
+}
+.more:hover {
+	font-family: tahoma;
+	font-size: 12px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	color:#333333;
+	text-decoration: none;
+}
+.point
+{
+background-image:url(call_images/point12.png);
+background-position:left; 
+background-repeat:no-repeat;
+}
+.gridtitle {
+	font-family: Verdana, Arial;
+	font-size: 13px;
+	background-color:#516A80;
+	color:#FFFFFF;
+	text-decoration: none; line-height:1.5;
+	font-weight: bold;
+}
+.gridtext {
+	font-family: Verdana, Arial;
+	font-size: 12px;
+	color:#516A80;
+	text-decoration: none; 
+	text-align:justify;
+	line-height:1.5;
+	font-weight: lighter;
+}
+.gridtext:hover {
+	font-family: Verdana, Arial;
+	font-size: 12px;
+	color:#516A80;
+	text-decoration:underline; 
+	text-align:justify;
+	line-height:1.5;
+	font-weight: lighter;
+}
+.gridmenu {
+	font-family: Verdana, Arial;
+	font-size: 12px;
+	color:#516A80;
+	font-weight: bold;
+	text-decoration:none; 
+	text-align:justify;
+	line-height:1.5;
+	
+}
+.gridmenu:hover {
+	font-family: Verdana, Arial;
+	font-size: 12px;
+	color:#516A80;
+	font-weight: bold;
+	text-decoration:underline; 
+	text-align:justify;
+	line-height:1.5;
+	
+}
+.headtext {
+	font-family: Verdana, Arial;
+	font-size: 12px;
+	color:#FFFFFF;
+	font-weight: bold;
+	text-decoration:none; 
+	text-align:justify;
+	line-height:1.5;	
+}

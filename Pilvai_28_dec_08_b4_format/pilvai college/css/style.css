@@ -1,0 +1,109 @@
+.text {
+	font-family: Verdana, Arial;
+	font-size: 11.5px;
+	color:#333333;
+	text-decoration: none; line-height:1.5;
+	font-weight: lighter;
+}
+
+.link_left {
+	
+	font-family: "Copperplate Gothic light";
+	font-size: 15px;
+	line-height: 10px;
+	font-weight:600;
+	text-transform: capitalize;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.menu_left {
+	font-family: Verdana, Arial;
+	font-size: 13px;
+	color:#333366;
+	text-decoration: none; line-height:1.5;
+	font-weight: bold;
+}
+.banner_text {
+font-family: "Copperplate Gothic light";
+	font-size: 14px;
+	font-weight: bold;
+	COLOR: #28166f; 
+	letter-spacing:1;
+	text-decoration:none;
+}
+.welcome {
+font-family: "Copperplate Gothic light";
+	font-size: 15px;
+	line-height: 10px;
+	font-weight:600;
+	text-transform: capitalize;
+	color:#666666;
+	text-decoration: none;
+}
+.point {
+background-image:url(../resources/images/arrow.gif); background-repeat:no-repeat; background-position:center;
+
+}
+.MENU {
+	font-family: "Copperplate Gothic light";
+	font-size: 15px;
+	line-height: 10px;
+	font-weight:600;
+	text-transform: capitalize;
+	color: #BF91BF;
+	text-decoration: none;
+}
+.shiva {
+	font-family: Arial;
+	font-size: 12px;
+
+	color: #ff6c00;
+	text-decoration: none;
+}
+.shiva:hover {
+	font-family: Arial;
+	font-size: 12px;
+	color: #955729;
+	text-decoration:underline;
+}
+.contact {
+	font-family: "Verdana";
+	font-size: 13px;
+	line-height: 10px;
+	font-weight:600;
+	color: #BF91BF;
+	text-decoration: none;
+}
+.text_2{
+	font-family: Verdana, Arial;
+	font-size: 12px;
+	color:#000000;
+	text-decoration: none; 
+	line-height:1.5;
+	font-weight: lighter;
+	text-align:justify;
+}
+.text_header{
+	font-family: Verdana, Arial;
+	font-size: 12px;
+	color:#333366;
+	font-weight:bold;
+	text-decoration: none; line-height:1.5;
+	
+	
+}
+
+ /*Grid Style Sheet*/
+.cellHeadStyle {
+	background-color: #BF91BF; FONT-WEIGHT: BOLD; FONT-SIZE: 12px; COLOR: #ffffff; FONT-FAMILY: Verdana;
+	 height:20px;
+}
+.cellStyle {
+	background-color: #E3E9F5;  FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: Verdana; height:20px
+;font-weight: lighter;text-align:left;
+}
+.cellStyle_Alt {
+	background-color: #BCCCE6; FONT-WEIGHT: normal; FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: Verdana; height:20px;
+	font-weight: lighter;text-align:left;
+}
+/* End Grid Style Sheet*/
