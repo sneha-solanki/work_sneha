@@ -1,0 +1,338 @@
+a {
+    color:white;
+    text-decoration: none;
+}
+
+a:hover 
+{
+     color:black; 
+     text-decoration:underline; 
+     cursor:pointer;  
+}
+#wrapper
+{
+	
+   width:1024px;
+   margin:0 auto;
+   text-align:left;
+}
+.text
+{
+	width:100%;
+	float:left;
+	text-align:justify;
+	font-family:tahoma,verdana Georgia, "Times New Roman", Times, serif;
+	font-size:12px;
+	line-height:2;
+	letter-spacing:1.5px;
+	color:white;
+
+}
+
+.logo
+{
+	background-image: url(../images/dev-infotech-logo.png);
+	background-repeat: no-repeat;
+	height:93px;
+	width: 305px;
+	float: left;
+}
+.socialico
+{
+
+	float: right;
+}
+.header
+{
+	
+	min-height:120px;
+}
+.section-midle
+{
+	background-color:#0fabe6;
+	min-height:250px;
+	font-family:Tw Cen MT,verdana Georgia, "Times New Roman", Times, serif;
+	font-size:16px;
+	color:white;
+	padding-left:20px;
+	padding-right:20px;
+	text-align:justify;
+}
+.section1
+{
+	position:relative;
+	background-color:#0fabe6;	
+	font-family:tahoma,verdana Georgia, "Times New Roman", Times, serif;
+	font-size:12px;
+	line-height:2;
+	letter-spacing:1.5px;
+	height:600px;
+	color:white;
+	padding-left:30px;
+	padding-right:30px;
+	text-align:justify;
+}
+.page_title
+{
+	background-image: url(../images/title-img.png); background-position:left top; background-repeat:no-repeat;
+	height:60px;
+	float:left;
+	padding-top:20px;
+	padding-right:30px;
+	padding-left:80px;
+	font-family:Tw Cen MT,verdana Georgia, "Times New Roman", Times, serif;
+	font-size:20px;
+	font-weight:bold;
+	color:white;
+	text-shadow: 2px 3px 2px #0788b8;
+	margin-top:10px;
+
+}
+
+.adress
+{
+	background-image: url(../images/address.png); background-position:left top; background-repeat:no-repeat;
+	height:84px;
+	width:250px;
+	float:left;
+	padding-left:90px;
+	
+}
+.mail
+{
+	background-image: url(../images/mail.png); background-position:left top; background-repeat:no-repeat;
+	height:84px;
+	width:250px;
+	float:left;
+	padding-left:60px;
+	margin-top:20px;
+}
+.call
+{
+	background-image: url(../images/call.png); background-position:left top; background-repeat:no-repeat;
+	height:84px;
+	width:200px;
+	float:left;
+	padding-left:80px;
+	margin-top:20px;
+}
+.form
+{
+	background-image: url(../images/pen.png); background-position:right top; background-repeat:no-repeat;
+	height:84px;
+	float:left;
+	margin-top:20px;
+	padding-top:62px;
+	padding-right:60px;
+	line-height:1.5;
+
+}
+.formtitle
+{
+	padding-left:20px;
+ font-size:13px;
+ font-weight:bold;
+line-height:2.5;
+letter-spacing:1.5px;
+	
+}
+
+.textbox
+{
+ width:200px;
+min-height:23px;
+ background-color:#0fabe6;
+ border:solid 2px white;
+ color:#333;
+ float:right;
+ margin-right:100px;
+ margin-top:2px;
+	
+}
+.btn-submit
+{
+ font-size:13px;
+ text-align:center;
+ font-weight:bold;
+ width:100px;
+ height:30px; 
+ background-color:#0fabe6;
+ border:solid 2px white;
+ float:left;
+ margin-top:30px;
+ margin-left:130px;
+ color:white;
+text-shadow: 2px 3px 2px #0788b8;
+box-shadow: 2px 3px 2px #0788b8;
+	
+}
+.btn-submit:hover
+{
+ font-size:13px;
+ text-align:center;
+ font-weight:bold;
+ width:100px;
+ height:30px; 
+ background-color:#ff7700;
+ border:solid 2px white;
+ color:white;
+ float:left;
+ margin-top:30px;
+ margin-left:130px;
+text-shadow: 2px 3px 2px #ff7700;
+box-shadow: 2px 3px 2px #0788b8;
+	
+}
+.btn-cancel
+{
+ font-size:13px;
+ text-align:center;
+ font-weight:bold;
+ width:100px;
+ height:30px; 
+ background-color:#0fabe6;
+ border:solid 2px white;
+ float:left;
+ margin-top:30px;
+ margin-left:5px;
+ color:white;
+text-shadow: 2px 3px 2px #0788b8;
+box-shadow: 2px 3px 2px #0788b8;
+	
+}
+.btn-cancel:hover
+{
+ font-size:13px;
+ text-align:center;
+ font-weight:bold;
+ width:100px;
+ height:30px; 
+ background-color:#ff7700;
+ border:solid 2px white;
+ color:white;
+ float:left;
+ margin-top:30px;
+ margin-left:5px;
+text-shadow: 2px 3px 2px #ff7700;
+box-shadow: 2px 3px 2px #0788b8;
+	
+}
+
+.webdesign
+{
+	background-image: url(../images/dev-infotech-webdesigning.png); background-position:center top; background-repeat:no-repeat;
+	width:215px;
+	min-height:200px;
+	float:left;
+	padding-top:60px;
+	
+	
+}
+.development
+{
+	background-image: url(../images/dev-infotech-development.png); background-position:center top; background-repeat:no-repeat;
+	width:215px;
+	min-height:200px;
+	float:left;
+	padding-top:60px;
+	padding-left:30px;
+}
+.hosting
+{
+	background-image: url(../images/dev-infotech-hosting.png); background-position:center top; background-repeat:no-repeat;
+	width:215px;
+	min-height:200px;
+	float:left;
+	padding-top:60px;
+	padding-left:30px;
+}
+.seo
+{
+	background-image: url(../images/dev-infotech-seo.png); background-position:center top; background-repeat:no-repeat;
+	width:224px;
+	min-height:200px;
+	float:left;
+	padding-top:60px;
+	padding-left:30px;
+}
+.section2
+{
+	background-image:url(../images/bg-black.png); background-repeat:repeat-x;
+	height:304px;
+	color:white;
+}
+.portfolioimg
+{
+	text-align:center;
+	background-image:url(../images/portfolioimg.png);background-position:center bottom; background-repeat:no-repeat; 
+	width:412px;
+	height:270px;
+	float:left;
+	padding-left:20px;
+	padding-right:20px;
+}
+.clientlist
+{
+	width:500px;
+	float:left;
+	padding-left:30px;
+	padding-top:10px;
+	padding-right:20px;	
+}
+
+
+.footer
+{	background-color:#f2f6ff;
+	min-height:110px;
+	
+
+}
+
+.footerleft
+{
+	padding-bottom:1px;
+	bottom:2px;
+	position:relative;
+	float:left;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:11px;
+	color:#424343;
+	padding-left:30px;
+}
+.text-orange
+{
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:14px;
+	font-weight:bold;
+	color:#fe4d00;
+}
+.linktext
+{
+	
+	color:#fe4d00;
+}
+.footercenter
+{
+	width:300px;
+	float:left;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:11px;
+	color:#424343;
+	margin-left:300px;
+	text-align:center;
+	padding-top:30px;
+	padding-right:10px;
+	
+}
+.footerright
+{
+	width:224px;
+	float:right;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:11px;
+	color:#424343;
+	text-align:right;
+	padding-right:20px;
+	padding-bottom:10px;
+
+}
